@@ -1,1 +1,138 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Coleta Consciente - Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Botão de acessibilidade fixo no canto direito -->
+    <div class="botao-acessibilidade" id="botaoAcessibilidade">
+        <button class="btn-acessibilidade" aria-label="Abrir menu de acessibilidade">♿ Acessibilidade</button>
+        <div class="menu-acessibilidade" id="menuAcessibilidade">
+            <button id="aumentarFonte" aria-label="Aumentar fonte">A+ Aumentar fonte</button>
+            <button id="diminuirFonte" aria-label="Diminuir fonte">A- Diminuir fonte</button>
+            <button id="altoContraste" aria-label="Ativar alto contraste">🌓 Alto contraste</button>
+        </div>
+    </div>
+
+    <!-- Cabeçalho do site -->
+    <header>
+        <div class="logo">
+            <span class="icone-logo">♻️</span>
+            <h1>Coleta Consciente</h1>
+        </div>
+        <p class="slogan">Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+        <!-- Menu de navegação -->
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#meio-ambiente">Meio Ambiente</a></li>
+                <li><a href="#problema">Problema Ambiental</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Seção Início -->
+        <section id="inicio" class="secao">
+            <h2>Bem-vindo ao Coleta Consciente</h2>
+            <p>Você sabia que o descarte inadequado de resíduos é um dos maiores problemas ambientais da atualidade? O lixo jogado em locais errados polui o solo, contamina rios e ameaça a produção de alimentos. Aqui você vai aprender como pequenas atitudes podem transformar esse cenário!</p>
+            <img src="https://via.placeholder.com/800x300?text=Reciclagem+e+Sustentabilidade" alt="Imagem ilustrativa sobre reciclagem e sustentabilidade" class="imagem-destaque">
+        </section>
+
+        <!-- Seção Meio Ambiente -->
+        <section id="meio-ambiente" class="secao">
+            <h2>🌱 Meio Ambiente e Sustentabilidade</h2>
+            <p>O meio ambiente é onde estão todos os recursos naturais necessários para a sobrevivência: água, ar, solo, plantas e animais. Preservá-lo é garantir vida para as futuras gerações.</p>
+            <article class="card-container">
+                <div class="card">
+                    <h3>🌎 O que é sustentabilidade?</h3>
+                    <p>É a capacidade de usar os recursos naturais sem esgotá-los, garantindo que as próximas gerações também possam usufruir deles.</p>
+                </div>
+                <div class="card">
+                    <h3>♻️ Coleta seletiva</h3>
+                    <p>Separar o lixo em reciclável e orgânico é o primeiro passo para reduzir a poluição e aproveitar materiais que podem virar novos produtos.</p>
+                </div>
+                <div class="card">
+                    <h3>🚜 Agro sustentável</h3>
+                    <p>A agricultura pode ser produtiva e ao mesmo tempo preservar o meio ambiente, usando técnicas como compostagem e reaproveitamento de água.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Seção Problema Ambiental -->
+        <section id="problema" class="secao">
+            <h2>⚠️ O problema: descarte inadequado de resíduos</h2>
+            <p>Em Curitiba e região, muitas pessoas ainda não sabem como descartar corretamente o lixo. Isso causa:</p>
+            <ul class="lista-problemas">
+                <li><strong>Poluição do solo</strong> – materiais como plástico e metal demoram centenas de anos para se decompor.</li>
+                <li><strong>Contaminação da água</strong> – o lixo jogado em terrenos baldios ou rios libera substâncias tóxicas.</li>
+                <li><strong>Risco para a agricultura</strong> – solo contaminado produz alimentos menos saudáveis.</li>
+                <li><strong>Consumo desenfreado</strong> – produzimos mais lixo do que o planeta consegue absorver.</li>
+            </ul>
+            <!-- Tabela com tempos de decomposição -->
+            <h3>Tempo de decomposição de resíduos comuns</h3>
+             <table class="tabela-decomposicao">
+                <thead>
+                    <tr>
+                        <th>Material</th>
+                        <th>Tempo de decomposição</th>
+                        <th>Cor da lixeira</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Papel</td><td>3 a 6 meses</td><td>Azul</td></tr>
+                    <tr><td>Plástico</td><td>Mais de 400 anos</td><td>Vermelho</td></tr>
+                    <tr><td>Vidro</td><td>Indeterminado (milhares de anos)</td><td>Verde</td></tr>
+                    <tr><td>Metal</td><td>Mais de 100 anos</td><td>Amarelo</td></tr>
+                    <tr><td>Resíduo orgânico</td><td>1 a 6 meses</td><td>Marrom</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Seção Quiz (funcionalidade interativa em JavaScript) -->
+        <section id="quiz" class="secao">
+            <h2>🧠 Quiz: Você sabe separar o lixo?</h2>
+            <p>Teste seus conhecimentos sobre coleta seletiva e práticas sustentáveis! São 5 perguntas. Acumule pontos e veja sua pontuação no final.</p>
+            
+            <div id="quiz-container">
+                <!-- As perguntas serão inseridas via JavaScript -->
+                <div id="pergunta-area"></div>
+                <div id="alternativas-area" class="alternativas"></div>
+                <div id="feedback-area" class="feedback"></div>
+                <div class="quiz-controles">
+                    <button id="proximoBtn" class="btn-quiz">Próxima pergunta</button>
+                    <button id="reiniciarBtn" class="btn-quiz" style="display: none;">Reiniciar quiz</button>
+                </div>
+                <div id="pontuacao-area" class="pontuacao">Pontuação: 0 / 5</div>
+            </div>
+        </section>
+
+        <!-- Seção Conclusão -->
+        <section id="conclusao" class="secao">
+            <h2>🌟 Conclusão: pequenas atitudes, grandes mudanças</h2>
+            <p>O equilíbrio entre produção agropecuária e meio ambiente é possível quando todos fazem a sua parte. Separar o lixo corretamente, reduzir o consumo de plástico e apoiar a agricultura sustentável são passos simples que transformam o futuro.</p>
+            <p><strong>Lembre-se:</strong> cada latinha reciclada, cada garrafa PET descartada no local certo e cada resto de comida virado em adubo ajudam a construir um "agro forte e futuro sustentável".</p>
+            <p>Vamos juntos cuidar do nosso planeta! 🌍♻️</p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Projeto desenvolvido para o Concurso Agrinho 2026</p>
+        <p>Kemilly Rafaeli de Souza Antunes</p>
+        <p>Tema: Agro forte, futuro sustentável - equilíbrio entre produção e meio ambiente</p>
+        <p>© 2026 - Coleta Consciente | Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
